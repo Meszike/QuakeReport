@@ -47,6 +47,7 @@ public class QueryUtils {
         // Perform HTTP request to the URL and receive a JSON response back
         String jsonResponse = null;
 
+
         try {
             jsonResponse = makeHttpRequest(url);
         } catch (IOException e) {
@@ -174,7 +175,7 @@ public class QueryUtils {
                 // Extract the value for the key called "place"
                 String location = properties.getString("place");
 
-// Extract the value for the key called "time"
+                // Extract the value for the key called "time"
                 long time = properties.getLong("time");
 
                 // Extract the value for the key called "url"
